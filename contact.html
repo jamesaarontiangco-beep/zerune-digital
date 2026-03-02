@@ -69,14 +69,21 @@
 <section class="contact-form-section reveal">
   <div class="container">
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="Company (Optional)">
-      <textarea rows="6" placeholder="Tell us about what you need"></textarea>
+   <form class="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true">
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="company" placeholder="Company (Optional)">
+
+  <textarea name="message" rows="6" placeholder="Tell us about what you need"></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
 
   </div>
 </section>
@@ -138,3 +145,4 @@ window.addEventListener("load", revealOnScroll);
 </body>
 
 </html>
+
