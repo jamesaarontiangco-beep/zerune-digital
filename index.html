@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerune Digital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="Logo symbol.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+
+  <img src="Logo symbol.svg" alt="Logo" class="nav-logo">
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="menu-overlay"></div>
+
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+  </header>
+
+<!-- HERO SECTION -->
+  <section class="hero">
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <img src="Logo with name.svg" alt="Zerune Digital" class="hero-brand">
+      <h1>Professional Websites for Contractors</h1>
+      <p>Zerune Digital helps contractors look more established online with professional websites designed to build trust, showcase expertise, and generate quality project inquiries.</p>
+      <a href="contact.html">Start Your Project</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/hero-contractor.jpg" alt="Contractor discussing project">
+    </div>
+  </div>
+
+</section>
+
+   <main class="home-main">
+
+  <!-- WHAT WE DO -->
+  <section class="block reveal">
+    <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> What We Do</h2>
+    <p>We design and build contractor-focused websites that help businesses present their work professionally, earn client trust, and turn visitors into real inquiries.</p>
+  </section>
+
+
+  <!-- WHY WEBSITE -->
+  <section class="block reveal">
+    <h2 class="section-title">
+     <i class="fa-solid fa-hard-hat"></i> Why Contractors Need a Website</h2>
+    <ul>
+      <li>Build trust with potential clients</li>
+      <li>Showcase completed projects professionally</li>
+      <li>Position your business as the professional choice in your area</li>
+      <li>Make it easy for clients to contact you</li>
+    </ul>
+  </section>
+
+
+<!-- PROCESS PREVIEW -->
+<section class="block reveal">
+  <h2 class="section-title">
+    <i class="fa-solid fa-gears"></i> Our Simple Process
+  </h2>
+
+  <p>
+    A clear 4-step workflow designed to keep your project simple,
+    structured, and stress-free from start to launch.
+  </p>
+
+  <a href="process.html" class="btn-process">
+    View Full Process →
+  </a>
+</section>
+
+
+  <!-- WHY WORK WITH US -->
+<section class="block reveal">
+  <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> Why Work With Zerune Digital</h2>
+  <ul>
+    <li>Focused on helping contractors look more established online</li>
+    <li>Clean, professional design that builds trust</li>
+    <li>Fast-loading, mobile-friendly websites</li>
+    <li>Simple process with clear communication</li>
+  </ul>
+</section>
+
+</main>
+
+<section class="contact-cta">
+  <div class="cta-content">
+    <h2>Let’s Build Your Website</h2>
+    <p>Ready to look more professional online? Let’s talk.</p>
+    <a href="contact.html" class="btn">Start Your Project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+
+    <img src="Logo symbol.svg" alt="Zerune Symbol" class="footer-logo">
+
+    <h3>Zerune Digital</h3>
+    <p>Email: hello@zerunedigital.com</p>
+    <p>Phone: +63 XXX XXX XXXX</p>
+    <p>Philippines</p>
+
+  </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < windowHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+</body>
+</html>

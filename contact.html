@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerune Digital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="Logo symbol.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+  <header>
+  <nav>
+
+  <img src="Logo symbol.svg" alt="Logo" class="nav-logo">
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="menu-overlay"></div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+</nav>
+  </header>
+
+
+<!-- ================= CONTACT HERO ================= -->
+
+<section class="contact-hero">
+  <div class="container">
+    <h1>Let’s Talk About Your Project</h1>
+    <p>
+      Tell us about your business and what you need. We’ll guide you through the next steps.
+    </p>
+  </div>
+</section>
+
+<main class="contact-main">
+
+<!-- ================= WHAT HAPPENS NEXT ================= -->
+
+<section class="contact-intro reveal">
+  <div class="container">
+    <h2>What Happens After You Contact Us</h2>
+
+    <ul>
+      <li>We review your message and project requirements</li>
+      <li>We reply with clear next steps and recommendations</li>
+      <li>No pressure, just a straightforward discussion</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+
+<section class="contact-form-section reveal">
+  <div class="container">
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Company (Optional)">
+      <textarea rows="6" placeholder="Tell us about your project"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= DIRECT CONTACT ================= -->
+
+<section class="contact-direct reveal">
+  <div class="container">
+    <h3>Prefer Direct Contact?</h3>
+    <p>Email: hello@zerunedigital.com</p>
+    <p>Phone: +63 XXX XXX XXXX</p>
+    <p class="contact-note">We usually reply within 24–48 hours.</p>
+  </div>
+</section>
+
+</main>
+
+
+<section class="contact-cta">
+  <div class="cta-content">
+    <h2>Let’s Build Your Website</h2>
+    <p>Ready to look more professional online? Let’s talk.</p>
+    <a href="contact.html" class="btn">Start Your Project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+
+    <img src="Logo symbol.svg" alt="Zerune Symbol" class="footer-logo">
+
+    <h3>Zerune Digital</h3>
+    <p>Email: hello@zerunedigital.com</p>
+    <p>Phone: +63 XXX XXX XXXX</p>
+    <p>Philippines</p>
+
+  </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < windowHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+</body>
+</html>

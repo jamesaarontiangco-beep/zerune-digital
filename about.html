@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerune Digital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="Logo symbol.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+
+  <header>
+  <nav>
+
+  <img src="Logo symbol.svg" alt="Logo" class="nav-logo">
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="menu-overlay"></div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+  </header>
+
+
+<!-- ================= ABOUT HERO ================= -->
+<section class="about-hero">
+  <div class="container">
+    <h1>Built for Contractors. Designed for Growth.</h1>
+    <p>
+      Zerune Digital helps contractors build professional online presence that earns trust, attracts better clients, and supports long-term growth.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= OUR STORY ================= -->
+  <main class="about-main">
+
+
+<section class="about-story reveal">
+  <div class="container">
+    <h2>Why Zerune Digital</h2>
+    <p>
+      We saw a consistent gap: skilled contractors delivering excellent work,
+      but lacking an online  presence that reflects their professionalism.
+      Zerune Digital was created to solve that by building clear,
+      professional websites that build credibility and turn visitors into real project inquiries.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= WHO WE HELP ================= -->
+<section class="about-clients reveal">
+  <div class="container">
+    <h2>Who We Help</h2>
+
+    <div class="client-grid">
+      <div class="client-card">General Contractors</div>
+      <div class="client-card">Renewable Contractors</div>
+      <div class="client-card">MEPS Contractors</div>
+      <div class="client-card">Construction Firms</div>
+      <div class="client-card">Architectural Firms</div>
+      <div class="client-card">Property Services</div>
+      <div class="client-card">Maintenance Companies</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= WHAT MAKES US DIFFERENT ================= -->
+<section class="about-difference reveal">
+  <div class="container">
+    <h2>What Makes Us Different</h2>
+
+     <div class="difference-card">
+       <h3>Industry Understanding</h3>
+       <p>We design with the contractor mindset: practical, clear, and results-focused.</p>
+     </div>
+ 
+     <div class="difference-card">
+       <h3>Clarity Over Complexity</h3>
+       <p>No unnecessary design trends. Just clean, professional websites that build trust.</p>
+     </div>
+
+     <div class="difference-card">
+       <h3>Built for Real Business</h3>
+       <p>Every decision is made to help you look established and generate real inquiries.</p>
+     </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOUNDER SECTION ================= -->
+<section class="about-founder reveal">
+  <div class="container founder-wrap">
+    <div class="founder-image">
+      <img src="images/founder.png" alt="Founder of Zerune Digital">
+    </div>
+
+    <div class="founder-text">
+      <h2>Behind Zerune Digital</h2>
+       <p class="founder-subtitle">
+        Built by an engineer who understands how project owners and contractors actually work.
+      </p>
+      <p>
+        Zerune Digital was founded by an engineer who understands how both project owners and contractors work from technical precision to real-world project execution.  </p>
+      <p>
+After seeing how many skilled professionals were underserved online, we focused on building websites that communicate trust, clarity, and professionalism.
+      </p>
+      <p>
+        Our goal is simple: build websites that work as hard as you do.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<section class="contact-cta">
+  <div class="cta-content">
+    <h2>Let’s Build Your Website</h2>
+    <p>Ready to look more professional online? Let’s talk.</p>
+    <a href="contact.html" class="btn">Start Your Project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+
+    <img src="Logo symbol.svg" alt="Zerune Symbol" class="footer-logo">
+
+    <h3>Zerune Digital</h3>
+    <p>Email: hello@zerunedigital.com</p>
+    <p>Phone: +63 XXX XXX XXXX</p>
+    <p>Philippines</p>
+
+  </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < windowHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+ 
+
+</body>
+</html>
