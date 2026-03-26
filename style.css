@@ -175,9 +175,22 @@ nav {
 ========================= */
 
 .hero {
-  background: linear-gradient(to right, #f5e3c2, #f7f1e4);
-  padding: 100px 20px;
+  position: relative;
+  padding: 120px 20px;
   overflow: hidden;
+
+  background: url('images/hero-contractor.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  /* adjust color + opacity */
+  background: rgba(7, 18, 42, 0.65); /* dark blue overlay */
+
+  z-index: 1;
 }
 
 .hero-content {
