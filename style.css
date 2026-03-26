@@ -176,7 +176,11 @@ nav {
 
 .hero {
   position: relative;
-  padding: 120px 20px;
+  min-height: 75vh; /* 👈 this is the key */
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
   overflow: hidden;
 
   background: url('images/hero-contractor.jpg') center/cover no-repeat;
@@ -219,15 +223,20 @@ nav {
 
 .hero h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 64px;
+  font-size: clamp(42px, 5vw, 64px);
   line-height: 1.1;
-  color: #08122c;
+  color: #ffffff;
   margin: 0 0 20px;
+
+  text-shadow: 0 6px 25px rgba(0,0,0,0.6);
 }
 
 .hero p {
   max-width: 600px;
   font-size: 20px;
+  color: #e5e7eb;
+
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
 .hero a {
